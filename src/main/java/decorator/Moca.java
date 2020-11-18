@@ -1,5 +1,7 @@
 package decorator;
 
+import java.math.BigDecimal;
+
 /**
  * @author liudeng
  * @date 2020/11/18 下午8:23
@@ -18,7 +20,7 @@ public class Moca extends Mix {
     }
 
     @Override
-    public double cost() {
-        return 2.1 + component.cost();
+    public BigDecimal cost() {
+        return new BigDecimal(String.valueOf(2.1)).add(component.cost());
     }
 }

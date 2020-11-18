@@ -1,5 +1,7 @@
 package decorator;
 
+import java.math.BigDecimal;
+
 /**
  * @author liudeng
  * @date 2020/11/18 下午8:15
@@ -17,7 +19,7 @@ public class Coffee extends Component {
     }
 
     @Override
-    public double cost() {
-        return 1;
+    public BigDecimal cost() {
+        return new BigDecimal(String.valueOf(1));
     }
 }

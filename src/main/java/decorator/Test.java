@@ -20,7 +20,7 @@ public class Test {
         System.out.println(water.getDescript());
 
         water = new Cupqi(water);
-        water = new Moca(water);
+        water = new Cupqi(water);
         System.out.println("描述：" + water.getDescript() + ", 价钱：" + water.cost());
     }
 }

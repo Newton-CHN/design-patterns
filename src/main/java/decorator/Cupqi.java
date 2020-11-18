@@ -1,5 +1,7 @@
 package decorator;
 
+import java.math.BigDecimal;
+
 /**
  * @author liudeng
  * @date 2020/11/18 下午8:28
@@ -18,7 +20,7 @@ public class Cupqi extends Mix {
     }
 
     @Override
-    public double cost() {
-        return component.cost() + 0.2;
+    public BigDecimal cost() {
+        return component.cost().add(new BigDecimal(String.valueOf(0.2)));
     }
 }

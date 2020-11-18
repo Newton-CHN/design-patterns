@@ -1,5 +1,7 @@
 package decorator;
 
+import java.math.BigDecimal;
+
 /**
  * @author liudeng
  * @date 2020/11/18 下午8:14
@@ -11,5 +13,5 @@ public abstract class Component {
     public  String getDescript() {
         return descript;
     }
-    public abstract double cost();
+    public abstract BigDecimal cost();
 }
